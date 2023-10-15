@@ -23,7 +23,7 @@ export async function PATCH(
     return NextResponse.json({ error: 'Invalid issue' }, { status: 400 });
   }
 
-  const updatedIssue = prisma.issue.update({
+  const updatedIssue = await prisma.issue.update({
     where: {
       id: issue.id,
     },
