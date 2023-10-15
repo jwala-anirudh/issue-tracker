@@ -41,7 +41,7 @@ const IssueForm = ({ issue }: { issue?: Issue }) => {
         await axios.post('/api/issues', data);
       }
 
-      router.push('/issues');
+      router.push('/issues/list');
       router.refresh();
     } catch (error) {
       setError('An unexpected error occured.');
@@ -60,7 +60,7 @@ const IssueForm = ({ issue }: { issue?: Issue }) => {
       <form className="space-y-3" onSubmit={onSubmit}>
         <TextField.Root>
           <TextField.Input
-            placeholder="Enter issue title..."
+            placeholder="Enter title..."
             defaultValue={issue?.title}
             {...register('title')}
           />
@@ -71,7 +71,7 @@ const IssueForm = ({ issue }: { issue?: Issue }) => {
           control={control}
           defaultValue={issue?.description}
           render={({ field }) => (
-            <SimpleMDE placeholder="Enter issue description..." {...field} />
+            <SimpleMDE placeholder="Enter description..." {...field} />
           )}
         />
         <ErrorMessage>{errors.description?.message}</ErrorMessage>
