@@ -3,8 +3,8 @@ import ReactMarkdown from 'react-markdown';
 
 import prisma from '@/prisma/client';
 
-import { Card, Flex, Heading, Text } from '@radix-ui/themes';
 import IssueStatusBadge from '@/app/components/IssueStatusBadge';
+import { Card, Flex, Heading, Text } from '@radix-ui/themes';
 
 interface Props {
   params: { id: string };
