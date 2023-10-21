@@ -44,7 +44,7 @@ const IssueDetailPage = async ({ params }: Props) => {
       <Box className='md:col-span-4'>
         <IssueDetails issue={issue} />
       </Box>
-      {session && issue.status !== 'CLOSED' && (
+      {session && (
         <Box>
           <Flex direction='column' gap='4'>
             <Flex direction='column'>
