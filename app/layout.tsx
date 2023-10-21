@@ -29,13 +29,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={inter.variable}>
         <QueryClientProvider>
           <AuthProvider>
-            <Theme accentColor="purple">
+            <Theme accentColor='purple'>
               <Navbar />
-              <main className="p-5">
+              <main className='p-5'>
                 <Container>{children}</Container>
               </main>
             </Theme>

@@ -51,27 +51,27 @@ const IssueForm = ({ issue }: { issue?: Issue }) => {
   });
 
   return (
-    <div className="max-w-xl">
+    <div className='max-w-xl'>
       {error && (
-        <Callout.Root color="red" className="mb-5">
+        <Callout.Root color='red' className='mb-5'>
           <Callout.Text>{error}</Callout.Text>
         </Callout.Root>
       )}
-      <form className="space-y-3" onSubmit={onSubmit}>
+      <form className='space-y-3' onSubmit={onSubmit}>
         <TextField.Root>
           <TextField.Input
-            placeholder="Enter title..."
+            placeholder='Enter title...'
             defaultValue={issue?.title}
             {...register('title')}
           />
         </TextField.Root>
         <ErrorMessage>{errors.title?.message}</ErrorMessage>
         <Controller
-          name="description"
+          name='description'
           control={control}
           defaultValue={issue?.description}
           render={({ field }) => (
-            <SimpleMDE placeholder="Enter description..." {...field} />
+            <SimpleMDE placeholder='Enter description...' {...field} />
           )}
         />
         <ErrorMessage>{errors.description?.message}</ErrorMessage>

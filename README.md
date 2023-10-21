@@ -47,3 +47,27 @@ VALUES
     ('User Feedback Integration', 'Integrate user feedback collection and analysis into the application.', 'IN_PROGRESS', '2023-10-17 12:20:00', '2023-10-17 12:20:00'),
     ('File Download Performance', 'File downloads are slow. Optimize file download performance for faster downloads.', 'CLOSED', '2023-10-17 14:55:00', '2023-10-17 14:55:00');
 ```
+
+```sql
+INSERT INTO Issue (title, description, status, createdAt, updatedAt)
+VALUES
+    ('User Profile Picture Issue', 'Users are experiencing problems uploading or changing their profile pictures. Investigate and fix this issue.', 'OPEN', '2023-10-17 16:10:00', '2023-10-17 16:10:00'),
+    ('Billing System Integration', 'Integrate a new billing system for improved payment processing and subscription management.', 'IN_PROGRESS', '2023-10-17 18:40:00', '2023-10-17 18:40:00'),
+    ('Network Latency Problems', 'Some users are reporting high network latency. Conduct network analysis and optimize for lower latency.', 'OPEN', '2023-10-17 20:15:00', '2023-10-17 20:15:00'),
+    ('User Permission Management', 'Implement a robust user permission management system for better access control.', 'CLOSED', '2023-10-17 22:00:00', '2023-10-17 22:00:00'),
+    ('Broken Checkout Process', 'Users are unable to complete purchases due to issues with the checkout process. Fix the problem.', 'IN_PROGRESS', '2023-10-18 08:30:00', '2023-10-18 08:30:00'),
+    ('Content Synchronization Issue', 'Content synchronization between devices is failing. Ensure seamless synchronization.', 'OPEN', '2023-10-18 10:45:00', '2023-10-18 10:45:00'),
+    ('Data Import and Export Feature', 'Develop a data import and export feature to allow users to move their data in and out of the application.', 'OPEN', '2023-10-18 12:20:00', '2023-10-18 12:20:00'),
+    ('Performance Analytics Dashboard', 'Create a performance analytics dashboard to provide insights into system performance.', 'CLOSED', '2023-10-18 14:55:00', '2023-10-18 14:55:00'),
+    ('Mobile App Push Notifications', 'Implement push notifications for the mobile app to keep users informed of updates and events.', 'OPEN', '2023-10-18 16:10:00', '2023-10-18 16:10:00'),
+    ('Localization Expansion', 'Expand language support and localization options to reach a wider audience.', 'IN_PROGRESS', '2023-10-18 18:40:00', '2023-10-18 18:40:00'),
+    ('API Documentation Update', 'Update the API documentation to provide developers with accurate and up-to-date information.', 'OPEN', '2023-10-18 20:15:00', '2023-10-18 20:15:00'),
+    ('User Account Security Audit', 'Conduct a security audit of user accounts to identify and rectify vulnerabilities.', 'OPEN', '2023-10-18 22:00:00', '2023-10-18 22:00:00'),
+    ('Enhanced User Onboarding', 'Improve the user onboarding process to make it more intuitive for new users.', 'CLOSED', '2023-10-19 08:30:00', '2023-10-19 08:30:00'),
+    ('Bug Report and Feedback Form', 'Implement a bug reporting and feedback form to gather user input and issues.', 'IN_PROGRESS', '2023-10-19 10:45:00', '2023-10-19 10:45:00'),
+    ('File Upload Size Limit Increase', 'Increase the file upload size limit to accommodate larger files.', 'OPEN', '2023-10-19 12:20:00', '2023-10-19 12:20:00'),
+    ('Third-Party Integration', 'Integrate a third-party service for enhanced functionality and features.', 'IN_PROGRESS', '2023-10-19 14:55:00', '2023-10-19 14:55:00'),
+    ('User Activity Logging', 'Implement user activity logging for enhanced security and auditing.', 'CLOSED', '2023-10-19 16:10:00', '2023-10-19 16:10:00'),
+    ('Subscription Plan Upgrades', 'Introduce new subscription plans with additional features and benefits.', 'OPEN', '2023-10-19 18:40:00', '2023-10-19 18:40:00'),
+    ('Performance Testing and Optimization', 'Conduct performance testing and optimization for the entire system to improve speed and responsiveness.', 'OPEN', '2023-10-19 20:15:00', '2023-10-19 20:15:00');
+```

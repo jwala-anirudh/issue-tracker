@@ -13,7 +13,7 @@ interface Props {
 const IssueSummary = ({ issueCounts: { open, inProgress, closed } }: Props) => {
   const containers: { label: string; value: number; status: Status }[] = [
     { label: 'Open Issues', value: open, status: 'OPEN' },
-    { label: 'In-progress Issues', value: inProgress, status: 'IN_PROGRESS' },
+    { label: 'In Progress Issues', value: inProgress, status: 'IN_PROGRESS' },
     { label: 'Closed Issues', value: closed, status: 'CLOSED' },
   ];
 
@@ -24,7 +24,7 @@ const IssueSummary = ({ issueCounts: { open, inProgress, closed } }: Props) => {
           <Flex direction='column' gap='1'>
             <Link
               href={`/issues/list?status=${container.status}`}
-              className='text-sm font-medium'
+              className='text-sm font-medium hover:text-purple-500'
             >
               {container.label}
             </Link>

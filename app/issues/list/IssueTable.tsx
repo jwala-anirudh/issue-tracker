@@ -1,7 +1,7 @@
 import { IssueStatusBadge } from '@/app/components';
 import { Issue, Status } from '@prisma/client';
 import { ArrowUpIcon } from '@radix-ui/react-icons';
-import { Link, Table } from '@radix-ui/themes';
+import { Link, Table, Text } from '@radix-ui/themes';
 import NextLink from 'next/link';
 
 export interface IssueQuery {
@@ -40,6 +40,19 @@ const IssueTable = ({ searchParams, issues }: Props) => {
         </Table.Row>
       </Table.Header>
       <Table.Body>
+        {issues.length === 0 && (
+          <Table.Row>
+            <Table.Cell colSpan={3}>
+              <Text>
+                No issues are listed. Start by filling a&nbsp;
+                <Link href='/issues/new' className='font-semibold'>
+                  New Issue
+                </Link>{' '}
+                to start with...
+              </Text>
+            </Table.Cell>
+          </Table.Row>
+        )}
         {issues.map((issue) => (
           <Table.Row key={issue.id}>
             <Table.Cell>
