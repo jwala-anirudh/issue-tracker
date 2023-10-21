@@ -46,21 +46,21 @@ const IssueDetailPage = async ({ params }: Props) => {
       </Box>
       {session && (
         <Box>
-          <Flex direction='column' gap='4'>
-            <Flex direction='column'>
-              <Text as='p' size='2' weight='bold'>
-                Status
-              </Text>
-              <StatusSelect issue={issue} />
-            </Flex>
-            <Flex direction='column'>
-              <Text as='p' size='2' weight='bold'>
-                Assignee
-              </Text>
-              <AssigneeSelect issue={issue} />
-            </Flex>
+          <Flex direction='column' gap='2' mb='3'>
             <EditIssueButton issueId={issue.id} />
             <DeleteIssueButton issueId={issue.id} />
+          </Flex>
+          <Flex direction='column' mb='3'>
+            <Text as='p' size='2' weight='bold'>
+              Status
+            </Text>
+            <StatusSelect issue={issue} />
+          </Flex>
+          <Flex direction='column' mb='3'>
+            <Text as='p' size='2' weight='bold'>
+              Assignee
+            </Text>
+            <AssigneeSelect issue={issue} />
           </Flex>
         </Box>
       )}
