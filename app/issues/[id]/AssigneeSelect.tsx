@@ -19,6 +19,9 @@ const AssigneeSelect = ({ issue }: { issue: Issue }) => {
       .patch(`/api/issues/${issue.id}`, {
         assignedToUserId: userId || null,
       })
+      .then(() => {
+        toast.success('Assignee updated successfully.');
+      })
       .catch(() => {
         toast.error('Changes could not be saved.');
       });
@@ -30,7 +33,7 @@ const AssigneeSelect = ({ issue }: { issue: Issue }) => {
         defaultValue={issue.assignedToUserId || null!}
         onValueChange={assignIssue}
       >
-        <Select.Trigger placeholder="Assign..." />
+        <Select.Trigger placeholder='Assign...' />
         <Select.Content>
           <Select.Group>
             <Select.Label>Suggestions</Select.Label>
