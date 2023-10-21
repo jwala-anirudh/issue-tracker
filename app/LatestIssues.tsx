@@ -33,7 +33,12 @@ const LatestIssues = async () => {
               <Table.Cell>
                 <Flex justify='between'>
                   <Flex direction='column' align='start' gap='2'>
-                    <Link href={`/issues/${issue.id}`}>{issue.title}</Link>
+                    <Link
+                      href={`/issues/${issue.id}`}
+                      className='hover:text-purple-500'
+                    >
+                      {issue.title}
+                    </Link>
                     <IssueStatusBadge status={issue.status} />
                   </Flex>
                   {issue.assignedToUser && (

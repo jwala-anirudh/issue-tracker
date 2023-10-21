@@ -5,7 +5,7 @@ import { Callout } from '@radix-ui/themes';
 
 const InfoBar = () => {
   return (
-    <Callout.Root variant='surface' color='amber' size='1'>
+    <Callout.Root variant='surface' color='amber' size='1' role='note'>
       <Callout.Icon>
         <InfoCircledIcon />
       </Callout.Icon>
