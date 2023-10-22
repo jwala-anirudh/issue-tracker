@@ -1,0 +1,13 @@
+version: '3.5'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: issue-tracker-nextjs
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+      - /app/node_modules

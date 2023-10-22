@@ -71,3 +71,17 @@ VALUES
     ('Subscription Plan Upgrades', 'Introduce new subscription plans with additional features and benefits.', 'OPEN', '2023-10-19 18:40:00', '2023-10-19 18:40:00'),
     ('Performance Testing and Optimization', 'Conduct performance testing and optimization for the entire system to improve speed and responsiveness.', 'OPEN', '2023-10-19 20:15:00', '2023-10-19 20:15:00');
 ```
+
+## Docker setup
+
+### Build an image
+
+```
+docker build -t issue-tracker-nextjs .
+```
+
+### Build a container
+
+```
+docker-compose up --build
+```
